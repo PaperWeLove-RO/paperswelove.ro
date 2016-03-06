@@ -1,5 +1,10 @@
 url: https://paperswelove.ro
 baseurl: ''
+enforce_ssl: paperswelove.ro
+safe: true
+lsi: false
+sass:
+    style: compressed
 
 compass:
   logo: "/images/logo.png"
@@ -12,3 +17,12 @@ markdown: kramdown
 highlighter: rouge
 
 permalink: pretty
+
+# Settings for deploy rake task
+username:        papers-we-love-ro
+repo:            paperswelove.ro
+branch:          source
+relative_source: ../paperswelove.ro/
+destination:     ../paperswelove.ro-pages/
+production_url:  https://paperswelove.ro
+source_url:      https://github.com/papers-we-love-ro/paperswelove.ro
