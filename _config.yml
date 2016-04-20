@@ -7,7 +7,7 @@ sass:
     style: compressed
 
 compass:
-  logo: "/favicon.ico"
+  logo: "/images/logo.png"
   author: "Papers We Love Romania"
   tagline: "Community built around reading, discussing and learning more about academic computer science papers."
   include_content: true
