@@ -57,8 +57,8 @@ namespace :site do
     # Make sure destination folder exists as git repo
     check_destination
 
-    sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+    sh "git checkout --force #{SOURCE_BRANCH}"
+    Dir.chdir(CONFIG["destination"]) { sh "git checkout --force #{DESTINATION_BRANCH}" }
 
     # Generate the site
     sh "bundle exec jekyll build"
